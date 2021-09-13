@@ -2,7 +2,7 @@ package com.telecom.stepdefinition;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+
 
 import com.telecom.objectrepository.AddCustomerPage;
 
