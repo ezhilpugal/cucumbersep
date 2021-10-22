@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 
 import com.telecom.objectrepository.AddCustomerPage;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -15,7 +16,7 @@ public class AddCustomerPlanSteps extends Commonactions {
 	
    Commonactions c = new Commonactions();
    AddCustomerPage a = new AddCustomerPage();
-	@Given("user click on add customer button")
+	@And("user click on add customer button")
 	public void user_click_on_add_customer_button() {
 		c.button(a.getAddcustomerbtn());
 	}
@@ -28,12 +29,13 @@ public class AddCustomerPlanSteps extends Commonactions {
 		c.insertValue(a.getEmail(), "eazkil@gmail.com");
 		c.insertValue(a.getAddr(),"chennai");
 		c.insertValue(a.getPhon(), "1234");
-		
+		c.insertTextjs(element, value);
 	}
-	@When("user click on submit button")
+	@And("user click on submit button")
 	public void user_click_on_submit_button() {
 
 c.button(a.getCustomerbtn());
+
 	}
     @Then("user verify customer id is generated")
 	public void user_verify_customer_id_is_generated() {

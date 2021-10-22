@@ -7,7 +7,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features=".//src//test//resources//AddTariffPlan.feature",
+@CucumberOptions(features=".//src//test//resources//AddCustomer.feature",
                      glue="com.telecom.stepdefinition",
                       plugin= {"html:target","json:target/reports.json"},
                       monochrome=true,

@@ -28,6 +28,7 @@ public class AddTariffPlanSteps extends Commonactions {
 	@When("user need to fill the field {int}dlist")
 	public void user_need_to_fill_the_field_dlist (Integer int1,DataTable data) {
 	  List<String> as = data.asList(String.class);
+	 // c.insertValue(a.getA(), as.get(0));
 	  c.insertValue(a.getA(), as.get(0));
 	  c.insertValue(a.getB(), as.get(1));
 	  c.insertValue(a.getC(), as.get(2));

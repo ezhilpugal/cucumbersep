@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("./src/test/resources/AddTariffPlan.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("./src/test/resources/AddCustomer.feature");
 formatter.feature({
-  "name": "Title of your feature",
+  "name": "Demo Telecom",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "add tariff plan validation",
+  "name": "add customer flow validation",
   "description": "",
   "keyword": "Scenario"
 });
@@ -14,54 +14,41 @@ formatter.before({
   "status": "failed"
 });
 formatter.step({
-  "name": "user click on add tariff button",
+  "name": "user click on add customer button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "AddTariffPlanSteps.user_click_on_add_tariff_button()"
+  "location": "AddCustomerPlanSteps.user_click_on_add_customer_button()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "user need to fill the field 1dlist",
-  "rows": [
-    {
-      "cells": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7"
-      ]
-    }
-  ],
+  "name": "user need to fill up the fields",
   "keyword": "When "
 });
 formatter.match({
-  "location": "AddTariffPlanSteps.user_need_to_fill_the_field_dlist(Integer,DataTable)"
+  "location": "AddCustomerPlanSteps.user_need_to_fill_up_the_fields()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "user click the submit button",
+  "name": "user click on submit button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "AddTariffPlanSteps.user_click_the_submit_button()"
+  "location": "AddCustomerPlanSteps.user_click_on_submit_button()"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "user verify congratulations is generated",
+  "name": "user verify customer id is generated",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AddTariffPlanSteps.user_verify_customer_plan_is_generated()"
+  "location": "AddCustomerPlanSteps.user_verify_customer_id_is_generated()"
 });
 formatter.result({
   "status": "skipped"
